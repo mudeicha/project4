@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>luas lingkaran</title>
+    <style>
+        body
+        {
+            background-color: burlywood;
+        }
+    </style>
+    <body>
+        <h3>hitung luas lingkaran</h3>
+        
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>persegi panjang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>masukan lebar persegi panjang</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="lebar persegi"></td>
+                    </tr>
+                    <tr>
+                        <td>masukan panjang persegi panjang</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="panjang persegi"> </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="hitung()">hitung</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>luas persegi panjang</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="luas" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>keliling persegi panjang</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="keliling" disabled></td>
+                    </tr>
+                    
+    </body>
+    <script type="text/javascript">
+        function hitung()
+        {
+            var luas,keliling,panjang,lebar;
+
+            panjang=parseInt(document.getElementById("panjang persegi").value);
+            lebar=parseInt(document.getElementById("lebar persegi").value);
+
+             keliling=2 *(panjang*lebar);
+             luas= panjang*lebar;
+             
+             document.getElementById("keliling").value=keliling;
+             document.getElementById("luas").value=luas;
+        }
+        
+    </script>
+    <tr>
+        
+    </tr>
+
+
+</head>
